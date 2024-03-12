@@ -11,13 +11,23 @@ class Pantalla1_1175 extends StatelessWidget {
         backgroundColor: Colors.purple,
       ),
       body: Center(
-          child: Column(
-        children: [
-          Container(
-            child: Text("Campa EJEMPLO"),
-          )
-        ],
-      )),
+        child: Card(
+          elevation: 10,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+          color: Colors.purple,
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Text(
+              "Card Campa",
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
